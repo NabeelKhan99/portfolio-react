@@ -46,7 +46,7 @@ const Projects = () => {
       image: "https://images.unsplash.com/photo-1555099962-4199c345e5dd?q=80&w=1170&auto=format&fit=crop",
       tags: ["React", "TypeScript", "Tailwind", "Framer Motion"],
       liveUrl: "https://example.com",
-      githubUrl: "https://github.com",
+      githubUrl: "https://github.com/NabeelKhan99/portfolio-react",
     },
     {
       id: "5",
