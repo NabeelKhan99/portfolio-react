@@ -1,3 +1,4 @@
+
 import { SetStateAction, useState } from "react";
 import { motion } from "framer-motion";
 import { Search } from "lucide-react";
@@ -5,19 +6,11 @@ import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { ProjectCard, ProjectProps } from "@/components/ProjectCard";
 import SectionTitle from "@/components/SectionTitle";
-import {
-  FaReact, FaNodeJs, FaHtml5, FaCss3Alt, FaJs, FaGitAlt, FaGithub, FaPython, FaJava,
-  FaDocker, FaAngular, FaVuejs, FaLinux, FaAws
-} from "react-icons/fa";
-import {
-  SiTypescript, SiTailwindcss, SiDjango, SiMongodb, SiPostgresql,
-  SiFirebase, SiGraphql, SiVite, SiRedux, SiJest, SiNextdotjs, SiNginx, SiWebpack
-} from "react-icons/si";
 
 const Projects = () => {
   const [searchQuery, setSearchQuery] = useState("");
   const [activeFilter, setActiveFilter] = useState("All");
-
+  
   const projects: ProjectProps[] = [
     {
       id: "1",
@@ -25,8 +18,8 @@ const Projects = () => {
       description: "A multi-platform IT solutions hub with professional training, government consultancy, and data analytics integration.",
       image: "https://raw.githubusercontent.com/NabeelKhan99/Nabeelk99.github.io/refs/heads/cbed/images/service-inner.jpg",
       tags: ["PHP", "HTML", "CSS", "JavaScript"],
-      liveUrl: "https://github.com/NabeelKhan99/NabeelKhan99.github.io",
-      githubUrl: "https://github.com/NabeelKhan99/NabeelKhan99.github.io",
+      liveUrl: "https://nabeelkhan99.github.io/Nabeelk99.github.io/",
+      githubUrl: "https://github.com/NabeelKhan99/Nabeelk99.github.io/tree/cbed",
     },
     {
       id: "2",
@@ -37,11 +30,46 @@ const Projects = () => {
       liveUrl: "https://example.com",
       githubUrl: "https://github.com",
     },
-    // -- Other projects...
+    {
+      id: "3",
+      title: "Weather Dashboard",
+      description: "Real-time weather forecasting application with interactive maps and location-based services.",
+      image: "https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?q=80&w=1065&auto=format&fit=crop",
+      tags: ["JavaScript", "APIs", "Chart.js", "CSS"],
+      liveUrl: "https://example.com",
+      githubUrl: "https://github.com",
+    },
+    {
+      id: "4",
+      title: "Portfolio Website",
+      description: "A personal portfolio website built with modern web technologies.",
+      image: "https://images.unsplash.com/photo-1555099962-4199c345e5dd?q=80&w=1170&auto=format&fit=crop",
+      tags: ["React", "TypeScript", "Tailwind", "Framer Motion"],
+      liveUrl: "https://example.com",
+      githubUrl: "https://github.com",
+    },
+    {
+      id: "5",
+      title: "Blog Platform",
+      description: "A content management system for publishing and managing blog posts.",
+      image: "https://images.unsplash.com/photo-1499750310107-5fef28a66643?q=80&w=1170&auto=format&fit=crop",
+      tags: ["Next.js", "GraphQL", "Prisma", "PostgreSQL"],
+      liveUrl: "https://example.com",
+      githubUrl: "https://github.com",
+    },
+    {
+      id: "6",
+      title: "Real-time Chat App",
+      description: "A real-time messaging application with features like typing indicators and read receipts.",
+      image: "https://images.unsplash.com/photo-1611606063065-ee7946f0787a?q=80&w=1074&auto=format&fit=crop",
+      tags: ["Socket.io", "React", "Express", "MongoDB"],
+      liveUrl: "https://example.com",
+      githubUrl: "https://github.com",
+    },
   ];
 
   const categories = ["All", "React", "TypeScript", "Node.js", "JavaScript", "APIs", "PHP"];
-
+  
   const filteredProjects = projects.filter((project) => {
     const matchesSearch = project.title.toLowerCase().includes(searchQuery.toLowerCase()) || 
                          project.description.toLowerCase().includes(searchQuery.toLowerCase()) ||
@@ -54,7 +82,6 @@ const Projects = () => {
 
   return (
     <>
-      {/* -- Projects Section -- */}
       <section className="py-12">
         <div className="container px-4 mx-auto">
           <SectionTitle
@@ -62,7 +89,7 @@ const Projects = () => {
             title="Projects & Case Studies"
             description="Browse through my latest projects and discover the technologies I've used to bring ideas to life."
           />
-          {/* -- Search Bar + Category Buttons -- */}
+          
           <div className="flex flex-col sm:flex-row justify-between gap-6 mb-12">
             <div className="relative">
               <Search className="absolute left-3 top-2.5 h-4 w-4 text-muted-foreground" />
@@ -70,9 +97,10 @@ const Projects = () => {
                 placeholder="Search projects..."
                 className="pl-10 glass-card"
                 value={searchQuery}
-                onChange={(e) => setSearchQuery(e.target.value)}
+                onChange={(e: { target: { value: SetStateAction<string>; }; }) => setSearchQuery(e.target.value)}
               />
             </div>
+            
             <div className="flex flex-wrap gap-2">
               {categories.map((category) => (
                 <Button
@@ -91,6 +119,7 @@ const Projects = () => {
               ))}
             </div>
           </div>
+          
           {filteredProjects.length > 0 ? (
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {filteredProjects.map((project) => (
@@ -112,57 +141,65 @@ const Projects = () => {
           )}
         </div>
       </section>
-
-      {/* -- Skills Wall Section -- */}
-      <section className="py-16 bg-background">
+      
+      {/* Open Source Section */}
+      <section className="py-16 bg-secondary/20 backdrop-blur-sm">
         <div className="container px-4 mx-auto">
           <SectionTitle
-            subtitle="Tech Stack"
-            title="Skills & Tools I Use"
-            description="A broad set of technologies I’ve worked with to build, deploy, and maintain modern applications."
+            subtitle="Open Source"
+            title="Contributing to the Community"
+            description="Some of my contributions to open source projects and the developer community."
           />
-          <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-9 gap-6 mt-10 text-center">
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             {[
-              { icon: FaHtml5, title: "HTML5" },
-              { icon: FaCss3Alt, title: "CSS3" },
-              { icon: FaJs, title: "JavaScript" },
-              { icon: SiTypescript, title: "TypeScript" },
-              { icon: FaReact, title: "React" },
-              { icon: SiNextdotjs, title: "Next.js" },
-              { icon: FaNodeJs, title: "Node.js" },
-              { icon: SiDjango, title: "Django" },
-              { icon: FaPython, title: "Python" },
-              { icon: FaJava, title: "Java" },
-              { icon: SiTailwindcss, title: "Tailwind CSS" },
-              { icon: FaGitAlt, title: "Git" },
-              { icon: FaGithub, title: "GitHub" },
-              { icon: SiFirebase, title: "Firebase" },
-              { icon: SiMongodb, title: "MongoDB" },
-              { icon: SiPostgresql, title: "PostgreSQL" },
-              { icon: SiGraphql, title: "GraphQL" },
-              { icon: SiRedux, title: "Redux" },
-              { icon: FaDocker, title: "Docker" },
-              { icon: FaLinux, title: "Linux" },
-              { icon: SiVite, title: "Vite" },
-              { icon: FaAws, title: "AWS" },
-              { icon: SiJest, title: "Jest" },
-              { icon: FaAngular, title: "Angular" },
-              { icon: FaVuejs, title: "Vue.js" },
-              { icon: SiNginx, title: "Nginx" },
-              { icon: SiWebpack, title: "Webpack" },
-            ].map(({ icon: Icon, title }, index) => (
+              {
+                title: "React Component Library",
+                description: "A collection of reusable React components with TypeScript support and accessibility features.",
+                contributions: "Created 15+ components and improved documentation.",
+                link: "https://github.com",
+              },
+              {
+                title: "JavaScript Utility Functions",
+                description: "A library of utility functions for common JavaScript tasks.",
+                contributions: "Added new functions and wrote unit tests.",
+                link: "https://github.com",
+              },
+              {
+                title: "Tailwind CSS Plugin",
+                description: "A plugin for Tailwind CSS that adds custom utilities and components.",
+                contributions: "Fixed bugs and added new features.",
+                link: "https://github.com",
+              },
+              {
+                title: "Developer Blog",
+                description: "Technical articles and tutorials on web development topics.",
+                contributions: "Published 10+ articles on JavaScript, React, and CSS.",
+                link: "https://dev.to",
+              },
+            ].map((item, index) => (
               <motion.div
-                key={title}
-                initial={{ opacity: 0, y: 10 }}
+                key={index}
+                initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ delay: index * 0.04, duration: 0.4 }}
-                className="flex flex-col items-center group"
+                transition={{ duration: 0.5 }}
+                className="glass-card p-6 rounded-xl h-full"
               >
-                <div title={title} className="text-4xl text-muted-foreground group-hover:text-primary transition-all">
-                  <Icon />
+                <h3 className="text-xl font-bold mb-2">{item.title}</h3>
+                <p className="text-muted-foreground mb-3">{item.description}</p>
+                
+                <p className="text-sm mb-4">
+                  <span className="font-semibold text-primary">My contributions:</span> {item.contributions}
+                </p>
+                
+                <div className="mt-auto pt-2">
+                  <Button variant="outline" asChild size="sm" className="hover:border-primary/50">
+                    <a href={item.link} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1.5">
+                      View Project
+                    </a>
+                  </Button>
                 </div>
-                <span className="text-xs mt-2 text-muted-foreground group-hover:text-primary transition-all">{title}</span>
               </motion.div>
             ))}
           </div>
