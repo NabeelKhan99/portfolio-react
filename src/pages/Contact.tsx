@@ -11,7 +11,7 @@ const Contact = () => {
         <div className="container px-4 mx-auto">
           <SectionTitle
             subtitle="Get in Touch"
-            title="Let's Work"
+            title="Let's Work Togther"
             description="Have a project in mind or want to discuss a potential collaboration? I'd love to hear from you."
           />
           
