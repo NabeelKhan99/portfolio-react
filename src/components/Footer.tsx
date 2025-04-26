@@ -20,7 +20,7 @@ const Footer = () => {
           
           <div className="flex items-center space-x-4">
             <a 
-              href="https://github.com" 
+              href="https://github.com/NabeelKhan99" 
               target="_blank" 
               rel="noopener noreferrer"
               className="hover:text-primary transition-colors duration-300"
@@ -29,7 +29,7 @@ const Footer = () => {
               <Github size={20} />
             </a>
             <a 
-              href="https://linkedin.com" 
+              href="https://www.linkedin.com/in/nabeel-saeed-979a281b4" 
               target="_blank" 
               rel="noopener noreferrer"
               className="hover:text-primary transition-colors duration-300"
@@ -39,12 +39,13 @@ const Footer = () => {
             </a>
            
             <a 
-              href="mailto:example@example.com" 
+              href="mailto:nabeelkhan9990001@gmail.com" 
               className="hover:text-primary transition-colors duration-300"
-              aria-label="Email"
-            >
-              <Mail size={20} />
+               aria-label="Email"
+              >
+            <Mail size={20} />
             </a>
+
           </div>
         </div>
         

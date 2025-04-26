@@ -43,16 +43,16 @@ const Home = () => {
       id: "1",
       title: "A multi-platform IT solutions ",
       description: "A multi-platform IT solutions hub with professional training, government consultancy, and data analytics integration.",
-      image: "https://raw.githubusercontent.com/NabeelKhan99/Nabeelk99.github.io/refs/heads/cbed/images/service-inner.jpg",
+      image: "https://raw.githubusercontent.com/NabeelKhan99/NabeelKhan99.github.io/refs/heads/cibed/images/service-inner.jpg",
       tags: ["PHP", "HTML", "CSS", "JavaScript"],
       liveUrl: "https://github.com/NabeelKhan99/NabeelKhan99.github.io",
       githubUrl: "https://github.com/NabeelKhan99/NabeelKhan99.github.io",
     },
     {
       id: "2",
-      title: "Task Management App",
-      description: "A productive task management application with drag-and-drop functionality and team collaboration features.",
-      image: "https://images.unsplash.com/photo-1586281380117-5a60ae2050cc?q=80&w=1170&auto=format&fit=crop",
+      title: "Healthcare Management System",
+      description: "Built an innovative healthcare platform 💡 to streamline patient registration 📝, appointment scheduling 📅, and medical records 🏥, with complex forms and real-time SMS notifications 📲 for a seamless experience!",
+      image: "https://images.pexels.com/photos/7172830/pexels-photo-7172830.jpeg?q=80&w=1170&auto=format&fit=crop",
       tags: ["TypeScript", "React", "Firebase", "Tailwind"],
       liveUrl: "https://example.com",
       githubUrl: "https://github.com",
@@ -63,8 +63,8 @@ const Home = () => {
       description: "Real-time weather forecasting application with interactive maps and location-based services.",
       image: "https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?q=80&w=1065&auto=format&fit=crop",
       tags: ["JavaScript", "APIs", "Chart.js", "CSS"],
-      liveUrl: "https://example.com",
-      githubUrl: "https://github.com",
+      liveUrl: "weatherdasher.netlify.app",
+      githubUrl: "https://github.com/NabeelKhan99/weather-dashboard-API/tree/master",
     },
   ];
 
@@ -154,7 +154,7 @@ const Home = () => {
               
               <div className="flex items-center gap-4 mt-10">
                 <a 
-                  href="https://github.com" 
+                  href="https://github.com/NabeelKhan99" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   aria-label="GitHub Profile"
@@ -163,7 +163,7 @@ const Home = () => {
                   <Github size={20} />
                 </a>
                 <a 
-                  href="https://linkedin.com" 
+                  href="https://www.linkedin.com/in/nabeel-saeed-979a281b4" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   aria-label="LinkedIn Profile"
@@ -172,7 +172,7 @@ const Home = () => {
                   <Linkedin size={20} />
                 </a>
                 <a 
-                  href="mailto:example@example.com"
+                  href="mailto:nabeelkhan9990001@gmail.com"
                   aria-label="Email Me"
                   className="bg-secondary/60 hover:bg-secondary/80 p-2.5 rounded-full transition-colors duration-300"
                 >

@@ -66,7 +66,7 @@ const Contact = () => {
                     <div>
                       <h4 className="font-medium mb-1">Location</h4>
                       <p className="text-muted-foreground">
-                        San Francisco, California, USA
+                        Winnipeg,Canada and Islambad, Pakistan
                       </p>
                     </div>
                   </div>
@@ -78,7 +78,7 @@ const Contact = () => {
                 
                 <div className="flex gap-4">
                   <a 
-                    href="https://github.com" 
+                    href="https://github.com/NabeelKhan99" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="w-10 h-10 bg-secondary/60 hover:bg-secondary rounded-lg flex items-center justify-center transition-colors duration-300"
@@ -87,7 +87,7 @@ const Contact = () => {
                     <Github size={20} />
                   </a>
                   <a 
-                    href="https://linkedin.com" 
+                    href="https://www.linkedin.com/in/nabeel-saeed-979a281b4" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="w-10 h-10 bg-secondary/60 hover:bg-secondary rounded-lg flex items-center justify-center transition-colors duration-300"
@@ -96,13 +96,13 @@ const Contact = () => {
                     <Linkedin size={20} />
                   </a>
                   <a 
-                    href="https://twitter.com" 
+                    href="mailto:nabeelkhan9990001@gmail.com" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="w-10 h-10 bg-secondary/60 hover:bg-secondary rounded-lg flex items-center justify-center transition-colors duration-300"
-                    aria-label="Twitter Profile"
+                    aria-label="Email"
                   >
-                    <Twitter size={20} />
+                    <Mail size={20} />
                   </a>
                 </div>
               </div>
