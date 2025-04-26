@@ -36,7 +36,7 @@ const Projects = () => {
       description: "Real-time weather forecasting application with interactive maps and location-based services.",
       image: "https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?q=80&w=1065&auto=format&fit=crop",
       tags: ["JavaScript", "APIs", "Chart.js", "CSS"],
-      liveUrl: "weatherdasher.netlify.app",
+      liveUrl: "https://weatherdasher.netlify.app/",
       githubUrl: "https://github.com/NabeelKhan99/weather-dashboard-API/tree/master",
     },
     {
