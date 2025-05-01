@@ -23,12 +23,12 @@ const Projects = () => {
     },
     {
       id: "2",
-      title: "Healthcare Management System",
-      description: "Built an innovative healthcare platform 💡 to streamline patient registration 📝, appointment scheduling 📅, and medical records 🏥, with complex forms and real-time SMS notifications 📲 for a seamless experience!",
-      image: "https://images.pexels.com/photos/7172830/pexels-photo-7172830.jpeg?q=80&w=1170&auto=format&fit=crop",
-      tags: ["TypeScript", "React", "Firebase", "Tailwind"],
-      liveUrl: "https://example.com",
-      githubUrl: "https://github.com",
+      title: "🏘 Scalable Real Estate Rental App",
+      description: "Developed a full-featured, enterprise-grade rental apartment application using Next.js, Node.js, and AWS. The app includes secure user authentication via AWS Cognito, with backend services running on API Gateway, RDS, S3, and EC2. CI/CD is handled through Amplify. The frontend, built with Redux Toolkit, Tailwind CSS, Shadcn, TypeScript, and Framer Motion, delivers a smooth and responsive user experience. React Hook Form and Zod ensure robust form handling and validation. This project demonstrates my ability to build production-ready, scalable cloud applications.",
+      image: "/res1/stat1.jpg",
+      tags: ["Next.js", "Node.js", "AWS", "Tailwind"],
+      liveUrl: "https://work-in-progress-nab.netlify.app/",
+      githubUrl: "https://github.com/NabeelKhan99",
     },
     {
       id: "3",
@@ -55,7 +55,7 @@ const Projects = () => {
       image: "https://images.unsplash.com/photo-1499750310107-5fef28a66643?q=80&w=1170&auto=format&fit=crop",
       tags: ["Next.js", "GraphQL", "Prisma", "PostgreSQL"],
       liveUrl: "https://work-in-progress-nab.netlify.app/",
-      githubUrl: "https://github.com",
+      githubUrl: "https://github.com/NabeelKhan99",
     },
     {
       id: "6",
@@ -64,7 +64,7 @@ const Projects = () => {
       image: "https://images.unsplash.com/photo-1611606063065-ee7946f0787a?q=80&w=1074&auto=format&fit=crop",
       tags: ["Socket.io", "React", "Express", "MongoDB"],
       liveUrl: "https://work-in-progress-nab.netlify.app/",
-      githubUrl: "https://github.com",
+      githubUrl: "https://github.com/NabeelKhan99",
     },
   ];
 
