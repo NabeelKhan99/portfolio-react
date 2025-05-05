@@ -28,7 +28,7 @@ const Projects = () => {
       image: "/res1/stat1.jpg",
       tags: ["Next.js", "Node.js", "AWS", "Tailwind"],
       liveUrl: "https://work-in-progress-nab.netlify.app/",
-      githubUrl: "https://github.com/NabeelKhan99",
+      githubUrl: "https://github.com/NabeelKhan99/real-estate-prod",
     },
     {
       id: "3",
