@@ -47,7 +47,7 @@ const Projects = () => {
       title: "Portfolio Website",
       description: "A personal portfolio website built with modern web technologies.",
       image: "https://images.unsplash.com/photo-1555099962-4199c345e5dd?q=80&w=1170&auto=format&fit=crop",
-      tags: ["React", "TypeScript", "Tailwind", "Framer Motion"],
+      tags: ["React", "TypeScript", "Tailwind", "Framer Motion","Node.js"],
       liveUrl: "https://nabeel-saeed.netlify.app/",
       githubUrl: "https://github.com/NabeelKhan99/portfolio-react",
     },
