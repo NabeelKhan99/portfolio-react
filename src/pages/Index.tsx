@@ -39,28 +39,29 @@ const Home = () => {
   }, []);
 
   const featuredProjects: ProjectProps[] = [
-    {
+    
+      {
       id: "1",
+      title: "Emushtashfaa: Modular Healthcare Management System",
+      description: "Emushtashfaa is a modular healthcare management system built with Java Spring Boot, featuring separate Patient, Billing, and Kafka-based notification services. Docker and AWS CLI were used for efficient containerization and deployment. Real-time patient event processing was enabled via Apache Kafka. The system achieved over 85% test coverage, improving reliability and reducing production issues by 25%.",
+      image: "/res1/stat1.PNG",
+      tags: ["Java", "SpringBoot", "Docker", "AWS CLI"],
+      liveUrl: "https://work-in-progress-nab.netlify.app/",
+      githubUrl: "https://github.com/NabeelKhan99/emustashfaa-javaspringboot",
+    },
+     { id: "2",
       title: "A multi-platform IT solutions ",
-      description: "A multi-platform IT solutions hub with professional training, government consultancy, and data analytics integration.",
+      description: "Developed a multi-platform IT solutions hub with professional training, government consultancy, and seamless data analytics integration. Leveraged PHP, HTML, CSS, and JavaScript to optimize performance, reducing load times by 45% and improving responsiveness. Integrated real-time data dashboards to drive insights and decision-making. Enhanced scalability, supporting over 1,000 active users with a 20% increase in uptime stability.",
       image: "https://raw.githubusercontent.com/NabeelKhan99/NabeelKhan99.github.io/refs/heads/cibed/images/service-inner.jpg",
       tags: ["PHP", "HTML", "CSS", "JavaScript"],
       liveUrl: "https://github.com/NabeelKhan99/NabeelKhan99.github.io",
       githubUrl: "https://github.com/NabeelKhan99/NabeelKhan99.github.io",
     },
-    {
-      id: "2",
-      title: "🏘 Scalable Real Estate Rental App",
-      description: "Developed a full-featured, enterprise-grade rental apartment application using Next.js, Node.js, and AWS. The app includes secure user authentication via AWS Cognito, with backend services running on API Gateway, RDS, S3, and EC2. CI/CD is handled through Amplify. The frontend, built with Redux Toolkit, Tailwind CSS, Shadcn, TypeScript, and Framer Motion, delivers a smooth and responsive user experience. React Hook Form and Zod ensure robust form handling and validation. This project demonstrates my ability to build production-ready, scalable cloud applications.",
-      image: "/res1/stat1.jpg",
-      tags: ["Next.js", "Node.js", "AWS", "Tailwind"],
-      liveUrl: "https://work-in-progress-nab.netlify.app/",
-      githubUrl: "https://github.com/NabeelKhan99",
-    },
+    
     {
       id: "3",
       title: "Weather Dashboard",
-      description: "Real-time weather forecasting application with interactive maps and location-based services.",
+      description: "Developed a real-time weather forecasting dashboard using JavaScript, RESTful APIs, and Chart.js, featuring interactive maps and location-based services. The platform delivers dynamic, visual weather updates with fast, responsive performance, enhancing user engagement and improving data accessibility. API optimization and efficient front-end design resulted in 40% faster load times and a smoother user experience.",
       image: "https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?q=80&w=1065&auto=format&fit=crop",
       tags: ["JavaScript", "APIs", "Chart.js", "CSS"],
       liveUrl: "https://weatherdasher.netlify.app/",
