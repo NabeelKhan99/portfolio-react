@@ -141,7 +141,7 @@ const Home = () => {
                 <Link to="/projects">View Projects</Link>
               </Button>
 
-              <Button variant="outline" size="lg" asChild>
+            { /*  <Button variant="outline" size="lg" asChild>
                 <a 
                    href="/res1/resume.pdf" 
                   download 
@@ -149,7 +149,7 @@ const Home = () => {
                    >
                   Resume <ArrowDown size={16} />
                </a>
-             </Button>
+             </Button> */}
 </div>
 
               
