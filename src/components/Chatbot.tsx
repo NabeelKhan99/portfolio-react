@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
+const API_URL = import.meta.env.VITE_API_URL;
 
 interface Message {
   role: "user" | "chatbot";
@@ -25,7 +26,7 @@ const Chatbot: React.FC = () => {
     setMessages((prev) => [...prev, userMessage]);
 
     try {
-      const res = await fetch("http://127.0.0.1:8000/chat", {
+      const res = await fetch(`${API_URL}/chat`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
