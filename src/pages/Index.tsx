@@ -58,14 +58,14 @@ const Home = () => {
       githubUrl: "https://github.com/NabeelKhan99/NabeelKhan99.github.io",
     },
     
-    {
+      {
       id: "3",
-      title: "Weather Dashboard",
-      description: "Developed a real-time weather forecasting dashboard using JavaScript, RESTful APIs, and Chart.js, featuring interactive maps and location-based services. The platform delivers dynamic, visual weather updates with fast, responsive performance, enhancing user engagement and improving data accessibility. API optimization and efficient front-end design resulted in 40% faster load times and a smoother user experience.",
-      image: "https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?q=80&w=1065&auto=format&fit=crop",
-      tags: ["JavaScript", "APIs", "Chart.js", "CSS"],
-      liveUrl: "https://weatherdasher.netlify.app/",
-      githubUrl: "https://github.com/NabeelKhan99/weather-dashboard-API/tree/master",
+      title: "Smart FAQ Chatbot",
+      description: "Developed Smart FAQ which is an AI-powered chatbot with a React, Vite, and TypeScript frontend and a FastAPI backend powered by Hugging Face’s google/flan-t5-small. It provides context-aware answers through a floating widget and clean conversation UI. Currently, it responds with helpful answers and fallback jokes when uncertain. An upcoming feature will extract knowledge from site pages, ensuring responses are always grounded in real content.",
+      image: "/res1/img3chatbot.png",
+      tags: ["FastAPI", "React", "Prisma", "PostgreSQL"],
+      liveUrl: "https://nabeel-saeed.netlify.app/",
+      githubUrl: "https://github.com/NabeelKhan99/ChatBot-Backend",
     },
   ];
 
