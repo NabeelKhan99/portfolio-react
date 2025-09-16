@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import profilePic from "@/res/profilepic.jpg";
+import profilePic from "@/res/resolve101.png";
 import { useState, useEffect } from "react";
 
 const About = () => {

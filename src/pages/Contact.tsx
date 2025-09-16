@@ -51,12 +51,7 @@ const Contact = () => {
                     <div className="w-10 h-10 bg-accent/10 rounded-lg flex items-center justify-center shrink-0">
                       <Phone className="h-5 w-5 text-accent" />
                     </div>
-                    <div>
-                      <h4 className="font-medium mb-1">Phone</h4>
-                      <a href="tel:+1234567890" className="text-muted-foreground hover:text-primary transition-colors duration-300">
-                        +1 431-334-7029
-                      </a>
-                    </div>
+                   
                   </div>
                   
                   <div className="flex items-start gap-4">
@@ -87,7 +82,7 @@ const Contact = () => {
                     <Github size={20} />
                   </a>
                   <a 
-                    href="https://www.linkedin.com/in/nabeel-saeed-979a281b4" 
+                    href="https://www.linkedin.com/in/nabeel-f-saeed/" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="w-10 h-10 bg-secondary/60 hover:bg-secondary rounded-lg flex items-center justify-center transition-colors duration-300"
