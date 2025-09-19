@@ -40,26 +40,18 @@ const Home = () => {
 
   const featuredProjects: ProjectProps[] = [
     
-      {
+        {
       id: "1",
-      title: "Emushtashfaa: Modular Healthcare Management System",
-      description: "Emushtashfaa is a modular healthcare management system built with Java Spring Boot, featuring separate Patient, Billing, and Kafka-based notification services. Docker and AWS CLI were used for efficient containerization and deployment. Real-time patient event processing was enabled via Apache Kafka. The system achieved over 85% test coverage, improving reliability and reducing production issues by 25%.",
-      image: "/res1/stat1.PNG",
-      tags: ["Java", "SpringBoot", "Docker", "AWS CLI"],
+      title: "Automotive NLP Toolkit",
+      description: "Automotive NLP is a Python CLI toolkit for analyzing customer automotive feedback using NLP. It clusters complaints by issues or car make/model, detects recurring faults, performs sentiment analysis, and suggests dynamic pricing. Cloud deployment support is coming soon for scalable use.",
+      image: "/res1/mycli.png",
+      tags: ["Python", "Typer", "SQLAlchemy", "SQLite", "Pandas", "Scikit-learn", "SciPy", "spaCy"],
       liveUrl: "https://work-in-progress-nab.netlify.app/",
-      githubUrl: "https://github.com/NabeelKhan99/emustashfaa-javaspringboot",
-    },
-     { id: "2",
-      title: "A multi-platform IT solutions ",
-      description: "Developed a multi-platform IT solutions hub with professional training, government consultancy, and seamless data analytics integration. Leveraged PHP, HTML, CSS, and JavaScript to optimize performance, reducing load times by 45% and improving responsiveness. Integrated real-time data dashboards to drive insights and decision-making. Enhanced scalability, supporting over 1,000 active users with a 20% increase in uptime stability.",
-      image: "https://raw.githubusercontent.com/NabeelKhan99/NabeelKhan99.github.io/refs/heads/cibed/images/service-inner.jpg",
-      tags: ["PHP", "HTML", "CSS", "JavaScript"],
-      liveUrl: "https://github.com/NabeelKhan99/NabeelKhan99.github.io",
-      githubUrl: "https://github.com/NabeelKhan99/NabeelKhan99.github.io",
-    },
-    
-      {
-      id: "3",
+      githubUrl: "https://github.com/NabeelKhan99/Automotive-NLP",
+    }, 
+
+     {
+      id: "2",
       title: "Smart FAQ Chatbot",
       description: "Developed Smart FAQ which is an AI-powered chatbot with a React, Vite, and TypeScript frontend and a FastAPI backend powered by Hugging Face’s google/flan-t5-small. It provides context-aware answers through a floating widget and clean conversation UI. Currently, it responds with helpful answers and fallback jokes when uncertain. An upcoming feature will extract knowledge from site pages, ensuring responses are always grounded in real content.",
       image: "/res1/img3chatbot.png",
@@ -67,6 +59,19 @@ const Home = () => {
       liveUrl: "https://nabeel-saeed.netlify.app/",
       githubUrl: "https://github.com/NabeelKhan99/ChatBot-Backend",
     },
+
+      {
+      id: "3",
+      title: "Emushtashfaa: Modular Healthcare Management System",
+      description: "Emushtashfaa is a modular healthcare management system built with Java Spring Boot, featuring separate Patient, Billing, and Kafka-based notification services. Docker and AWS CLI were used for efficient containerization and deployment. Real-time patient event processing was enabled via Apache Kafka. The system achieved over 85% test coverage, improving reliability and reducing production issues by 25%.",
+      image: "/res1/stat1.PNG",
+      tags: ["Java", "SpringBoot", "Docker", "AWS CLI"],
+      liveUrl: "https://work-in-progress-nab.netlify.app/",
+      githubUrl: "https://github.com/NabeelKhan99/emustashfaa-javaspringboot",
+    },
+    
+    
+     
   ];
 
   const skills: SkillProps[] = [
