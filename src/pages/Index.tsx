@@ -43,7 +43,7 @@ const Home = () => {
         {
       id: "1",
       title: "Automotive NLP Toolkit",
-      description: "Automotive NLP is a Python CLI toolkit for analyzing customer automotive feedback using NLP. It clusters complaints by issues or car make/model, detects recurring faults, performs sentiment analysis, and suggests dynamic pricing. Cloud deployment support is coming soon for scalable use.",
+      description: "Developed an Automotive NLP Python CLI toolkit for analyzing customer automotive feedback using NLP. It clusters complaints by issues or car make/model, detects recurring faults, performs sentiment analysis, and suggests dynamic pricing. Cloud deployment support is coming soon for scalable use.",
       image: "/res1/mycli.png",
       tags: ["Python", "Typer", "SQLAlchemy", "SQLite", "Pandas", "Scikit-learn", "SciPy", "spaCy"],
       liveUrl: "https://work-in-progress-nab.netlify.app/",
@@ -63,7 +63,7 @@ const Home = () => {
       {
       id: "3",
       title: "Emushtashfaa: Modular Healthcare Management System",
-      description: "Emushtashfaa is a modular healthcare management system built with Java Spring Boot, featuring separate Patient, Billing, and Kafka-based notification services. Docker and AWS CLI were used for efficient containerization and deployment. Real-time patient event processing was enabled via Apache Kafka. The system achieved over 85% test coverage, improving reliability and reducing production issues by 25%.",
+      description: "Developed Emushtashfaa which is a modular healthcare management system built with Java Spring Boot, featuring separate Patient, Billing, and Kafka-based notification services. Docker and AWS CLI were used for efficient containerization and deployment. Real-time patient event processing was enabled via Apache Kafka. The system achieved over 85% test coverage, improving reliability and reducing production issues by 25%.",
       image: "/res1/stat1.PNG",
       tags: ["Java", "SpringBoot", "Docker", "AWS CLI"],
       liveUrl: "https://work-in-progress-nab.netlify.app/",
