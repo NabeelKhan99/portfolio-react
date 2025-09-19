@@ -151,7 +151,7 @@ const Projects = () => {
         </div>
       </section>
       
-      {/* Open Source Section */}
+       {/* Open Source Section 
       <section className="py-16 bg-secondary/20 backdrop-blur-sm">
         <div className="container px-4 mx-auto">
           <SectionTitle
@@ -213,7 +213,7 @@ const Projects = () => {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
     </>
   );
 };
