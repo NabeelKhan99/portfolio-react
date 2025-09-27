@@ -115,7 +115,7 @@ const About = () => {
 
       {/* Description Section */}
       <div className="mt-10 max-w-3xl text-center">
-        <h2 className="text-4xl font-bold mb-4">About Me</h2>
+        <h2 className="text-4xl font-bold mb-4">Hey there Nabeel here Welcome!!!!</h2>
         <p className="text-lg leading-7">
         "I am a dedicated Full Stack Developer with a deep passion for building modern, dynamic web applications. 
          I thrive on crafting seamless UI/UX experiences, developing powerful backend systems, and exploring cutting-edge technologies. 

@@ -45,7 +45,7 @@ const Navbar = () => {
             className="text-2xl font-display font-bold text-gradient"
             onClick={() => setMobileMenuOpen(false)}
           >
-            Portfolio
+            Nabeel-Saeed's-Portfolio
           </Link>
 
           {/* Desktop Navigation */}
