@@ -12,7 +12,7 @@ const Contact = () => {
           <SectionTitle
             subtitle="Get in Touch"
             title="Let's Work Togther"
-            description="Have a project in mind or want to discuss a potential collaboration? I'd love to hear from you."
+            description="Feel free to reach out for collaborations, freelance projects, job opportunities, or just a friendly hello!"
           />
           
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
@@ -104,19 +104,15 @@ const Contact = () => {
                 <ul className="space-y-2">
                   <li className="flex items-center gap-2">
                     <span className="w-2 h-2 bg-primary rounded-full"></span>
-                    <span>Freelance Projects</span>
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <span className="w-2 h-2 bg-primary rounded-full"></span>
                     <span>Full-time Positions</span>
                   </li>
                   <li className="flex items-center gap-2">
                     <span className="w-2 h-2 bg-primary rounded-full"></span>
-                    <span>Consultation</span>
+                    <span>Freelance Projects</span>
                   </li>
                   <li className="flex items-center gap-2">
                     <span className="w-2 h-2 bg-primary rounded-full"></span>
-                    <span>Speaking Engagements</span>
+                    <span>Consultation</span>
                   </li>
                 </ul>
               </div>
