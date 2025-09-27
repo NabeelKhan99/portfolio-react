@@ -169,7 +169,7 @@ const Home = () => {
                   <Github size={20} />
                 </a>
                 <a 
-                  href="https://www.linkedin.com/in/nabeel-saeed-979a281b4" 
+                  href="https://www.linkedin.com/in/nabeel-f-saeed/" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   aria-label="LinkedIn Profile"
@@ -225,8 +225,16 @@ const Home = () => {
           <SectionTitle
             subtitle="My Work"
             title="Featured Projects"
-            description="Here are a few projects I've worked on recently. Want to see more? Email me."
-          />
+           description={
+        <>
+          Here are a few projects I've worked on recently. Want to see more?{" "}
+          <Link to="/projects" className="text-blue-600 hover:underline">
+            Check out my projects page!
+          </Link>
+          .
+        </>
+           }
+           />
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {featuredProjects.map((project) => (
