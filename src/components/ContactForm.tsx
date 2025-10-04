@@ -19,10 +19,10 @@ import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
 import { Send } from "lucide-react";
 
-// 🧠 Replace these with your actual EmailJS credentials
-const SERVICE_ID = "service_ii97lft";
-const TEMPLATE_ID = "template_y9xfvj6";
-const PUBLIC_KEY = "mhLjDSmJbgvfwexfD";
+// Using environment variables for EmailJS configuration
+const SERVICE_ID = import.meta.env.VITE_EMAILJS_SERVICE_ID!;
+const TEMPLATE_ID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID!;
+const PUBLIC_KEY = import.meta.env.VITE_EMAILJS_PUBLIC_KEY!;
 
 const formSchema = z.object({
   name: z.string().min(2, { message: "Name must be at least 2 characters." }),
