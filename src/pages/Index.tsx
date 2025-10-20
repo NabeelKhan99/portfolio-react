@@ -125,7 +125,7 @@ const Home = () => {
               transition={{ duration: 0.6 }}
             >
               <span className="inline-block px-3 py-1 text-xs font-medium rounded-full mb-6 bg-primary/10 text-primary">
-                Software Developer
+                Software Engineer
               </span>
               
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-balance">
