@@ -28,8 +28,9 @@ const About = () => {
           }}
         />
 
-        {/* 🔥 Flame Effect */}
+       
         <div className="absolute inset-0 overflow-hidden rounded-2xl pointer-events-none">
+           {/* 🔥 Flame Effect 
           {Array.from({ length: 10 }).map((_, i) => (
             <motion.div
               key={`flame-${i}`}
@@ -61,8 +62,9 @@ const About = () => {
               }}
             />
           ))}
+          
 
-          {/* ✨ Sparks */}
+          {/* ✨ Sparks 
           {Array.from({ length: 6 }).map((_, i) => (
             <motion.div
               key={`spark-${i}`}
@@ -84,7 +86,7 @@ const About = () => {
                 ease: "easeOut",
               }}
             />
-          ))}
+          ))}  */} 
         </div>
 
         {/* Profile Image with hover parallax */}
@@ -115,12 +117,15 @@ const About = () => {
 
       {/* Description Section */}
       <div className="mt-10 max-w-3xl text-center">
-        <h2 className="text-4xl font-bold mb-4">Hey there V-Sauce Nabeel here!!!</h2>
+        <h2 className="text-4xl font-bold mb-4">Hello there!!!</h2>
         <p className="text-lg leading-7">
-        "Do you know the Moon is breaking away slowly from Earth's gravity. So anyways, I am a dedicated Full Stack Developer with a deep passion for building modern, dynamic web applications. 
-         I thrive on crafting seamless UI/UX experiences, developing powerful backend systems, and exploring cutting-edge technologies. 
-         Every project is an opportunity to innovate, learn, and push the boundaries of what's possible. 
-         I’m always eager to grow, refine my skills, and create impactful digital experiences that make a difference." 🚀🔥
+        "Hey, I’m Nabeel. 
+        I went to the University of Manitoba and I’ve been building stuff that actually gets used ever since. 
+        I’ve done things like a healthcare dashboard that lets clinics send updates faster, 
+        a chatbot that actually answers questions without confusing people 
+        and a platform that connects contractors to clients with maps and logins that just work. 
+        I like messing around with Java, Python, React  and more!!! basically whatever makes the project work. 
+        I’m always trying stuff out, breaking it, fixing it, and learning along the way." 
         </p>
       </div>
     </section>
