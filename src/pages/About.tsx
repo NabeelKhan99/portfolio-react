@@ -120,7 +120,8 @@ const About = () => {
         <h2 className="text-4xl font-bold mb-4">Hello there!!!</h2>
         <p className="text-lg leading-7">
         "Hey, I’m Nabeel. 
-        I went to the University of Manitoba and I’ve been building stuff that actually gets used ever since. 
+        I am an alumnus of University of Manitoba and I love building stuff that actually gets used by users and makes a real impact. 
+        I don't care if the project is for a big company or a small non-profit, as long as it is solving a problem I am there to solve it.
         I’ve done things like a healthcare dashboard that lets clinics send updates faster, 
         a chatbot that actually answers questions without confusing people 
         and a platform that connects contractors to clients with maps and logins that just work. 
