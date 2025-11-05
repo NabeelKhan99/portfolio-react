@@ -11,7 +11,7 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row justify-between items-center gap-4">
           <div>
             <Link to="/" className="text-xl font-display font-bold text-gradient">
-              Portfolio
+              My-Portfolio
             </Link>
             <p className="text-sm text-muted-foreground mt-2">
               &copy; {year} - All rights reserved
@@ -50,7 +50,7 @@ const Footer = () => {
         </div>
         
         <div className="mt-6 text-center text-xs text-muted-foreground">
-          <p>Designed with precision and built with modern technologies</p>
+          <p>Designed with care, built with modern technology.</p>
         </div>
       </div>
     </footer>
