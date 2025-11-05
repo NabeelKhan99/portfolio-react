@@ -95,8 +95,9 @@ const Projects = () => {
         <div className="container px-4 mx-auto">
           <SectionTitle
             subtitle="My Work"
-            title="Projects & Case Studies"
-            description="Browse through my latest projects and discover the technologies I've used to bring ideas to life."
+            title="My Projects, Showcasing My Skills."
+            description="Browse through my latest projects that are ongoing or completed. Each project is handled with care and attention to detail.
+            I learn new things with every project and love to take on challenges that push me to grow as a Software Engineer."
           />
           
           <div className="flex flex-col sm:flex-row justify-between gap-6 mb-12">
