@@ -126,7 +126,7 @@ const About = () => {
         a chatbot that actually answers questions without confusing people 
         and a platform that connects contractors to clients with maps and logins that just work. 
         I like messing around with Java, Python, React  and more!!! basically whatever makes the project work. 
-        I’m always trying stuff out, breaking it, fixing it, and learning along the way" 
+        I’m always trying stuff out, breaking it, fixing it, and learning along the way." 
         </p>
       </div>
     </section>
