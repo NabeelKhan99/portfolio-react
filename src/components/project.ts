@@ -1,8 +1,15 @@
 import { ProjectProps } from "@/components/ProjectCard";
 export const allProjects: ProjectProps[] = [
+
+    {
+    title: "Manitoba Broadband Competitive Gap Analysis",
+  description: "A geospatial reconstruction and analysis project identifying 50/10 Mbps internet coverage gaps across Manitoba. By bypassing a critical ID mismatch between legacy 1km hexagon maps and modern broadband speed datasets, I sourced and integrated National Broadband Data (NBD) GeoPackages via spatial centroid joins. The final analysis provides granular community-level metrics—identifying specific underserved areas like Ethelbert (17.4% coverage) and Grandview (33.3%)—to support strategic infrastructure expansion for local telecommunications cooperatives.",
+  image: "/res1/broadband.png", 
+  tags: ["QGIS", "GIS", "Spatial Data Engineering", "Data Reconstruction", "GeoPackage", "Manitoba Census Data"],
+    githubUrl: "https://github.com/NabeelKhan99/QGIS-W"},
     
      {
-      id: "1",
+      
       title: "Automotive NLP Toolkit",
       description: "Developed an Automotive NLP Python CLI toolkit for analyzing customer automotive feedback using NLP. It clusters complaints by issues or car make/model, detects recurring faults, performs sentiment analysis, and suggests dynamic pricing. Cloud deployment support is coming soon for scalable use.",
       image: "/res1/mycli.png",
@@ -12,7 +19,7 @@ export const allProjects: ProjectProps[] = [
     }, 
 
     {
-      id: "2",
+      
       title: "Smart FAQ Chatbot",
       description: "Developed Smart FAQ which is an AI-powered chatbot with a React, Vite, and TypeScript frontend and a FastAPI backend powered by Hugging Face’s google/flan-t5-small. It provides context-aware answers through a floating widget and clean conversation UI. Currently, it responds with helpful answers and fallback jokes when uncertain. An upcoming feature will extract knowledge from site pages, ensuring responses are always grounded in real content.",
       image: "/res1/img3chatbot.png",
@@ -22,7 +29,7 @@ export const allProjects: ProjectProps[] = [
     },
     
     {
-      id: "3",
+      
       title: "Emushtashfaa: Modular Healthcare Management System",
       description: "Developed Emushtashfaa which is a modular healthcare management system built with Java Spring Boot, featuring separate Patient, Billing, and Kafka-based notification services. Docker and AWS CLI were used for efficient containerization and deployment. Real-time patient event processing was enabled via Apache Kafka. The system achieved over 85% test coverage, improving reliability and reducing production issues by 25%.",
       image: "/res1/stat1.PNG",
@@ -32,7 +39,7 @@ export const allProjects: ProjectProps[] = [
     },
     
     {
-      id: "4",
+      
       title: "A multi-platform IT solutions ",
       description: "Developed a multi-platform IT solutions hub with professional training, government consultancy, and seamless data analytics integration. Leveraged PHP, HTML, CSS, and JavaScript to optimize performance, reducing load times by 45% and improving responsiveness. Integrated real-time data dashboards to drive insights and decision-making. Enhanced scalability, supporting over 1,000 active users with a 20% increase in uptime stability.",
       image: "https://raw.githubusercontent.com/NabeelKhan99/Nabeelk99.github.io/refs/heads/cibed/images/service-inner.jpg",
@@ -42,7 +49,7 @@ export const allProjects: ProjectProps[] = [
     },
 
     {
-      id: "5",
+      
       title: "Portfolio Website",
       description: "A personal portfolio website built with modern web technologies.",
       image: "https://images.unsplash.com/photo-1555099962-4199c345e5dd?q=80&w=1170&auto=format&fit=crop",
@@ -52,7 +59,7 @@ export const allProjects: ProjectProps[] = [
     },
 
      {
-      id: "6",
+      
       title: "Weather Dashboard",
       description: "Developed a real-time weather forecasting dashboard using JavaScript, RESTful APIs, and Chart.js, featuring interactive maps and location-based services. The platform delivers dynamic, visual weather updates with fast, responsive performance, enhancing user engagement and improving data accessibility. API optimization and efficient front-end design resulted in 40% faster load times and a smoother user experience.",
       image: "https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?q=80&w=1065&auto=format&fit=crop",

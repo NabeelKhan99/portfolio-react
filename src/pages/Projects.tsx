@@ -19,14 +19,19 @@ const Projects = () => {
   const [activeFilter, setActiveFilter] = useState("All");
   
   
-    
+  {allProjects.map((project, index) => (
+  <ProjectCard
+    key={index}
+    project={{ ...project, id: `project-${index + 1}` }} // ID generated dynamically
+  />
+))}  
    
    
- const projects = allProjects;
+ {/*const projects = allProjects;*/}
 
  {/*  const categories = ["All", "React", "TypeScript", "Node.js", "JavaScript", "APIs", "PHP","Java","SpringBoot"];*/}
  // Flatten all project tags into one array
-const allTags = projects.flatMap(project => project.tags);
+const allTags = allProjects.flatMap(project => project.tags);
 
 // Remove duplicates and sort
 const uniqueTags = Array.from(new Set(allTags)).sort();
@@ -34,7 +39,7 @@ const uniqueTags = Array.from(new Set(allTags)).sort();
 // Add "All" at the beginning
 const categories = ["All", ...uniqueTags];
   
-  const filteredProjects = projects.filter((project) => {
+  const filteredProjects = allProjects.filter((project) => {
     const matchesSearch = project.title.toLowerCase().includes(searchQuery.toLowerCase()) || 
                          project.description.toLowerCase().includes(searchQuery.toLowerCase()) ||
                          project.tags.some(tag => tag.toLowerCase().includes(searchQuery.toLowerCase()));

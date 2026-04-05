@@ -5,7 +5,7 @@ import { ExternalLink, Github } from "lucide-react";
 import { motion } from "framer-motion";
 
 export interface ProjectProps {
-  id: string;
+  id?: string;
   title: string;
   description: string;
   image: string;
