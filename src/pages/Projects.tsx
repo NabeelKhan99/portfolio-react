@@ -77,7 +77,15 @@ const Projects = () => {
    
   ];
 
-  const categories = ["All", "React", "TypeScript", "Node.js", "JavaScript", "APIs", "PHP","Java","SpringBoot"];
+ {/*  const categories = ["All", "React", "TypeScript", "Node.js", "JavaScript", "APIs", "PHP","Java","SpringBoot"];*/}
+ // Flatten all project tags into one array
+const allTags = projects.flatMap(project => project.tags);
+
+// Remove duplicates and sort
+const uniqueTags = Array.from(new Set(allTags)).sort();
+
+// Add "All" at the beginning
+const categories = ["All", ...uniqueTags];
   
   const filteredProjects = projects.filter((project) => {
     const matchesSearch = project.title.toLowerCase().includes(searchQuery.toLowerCase()) || 
