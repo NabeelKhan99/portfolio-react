@@ -6,6 +6,12 @@ import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { ProjectCard, ProjectProps } from "@/components/ProjectCard";
 import SectionTitle from "@/components/SectionTitle";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Pagination } from "swiper/modules";
+// @ts-expect-error Missing type declarations for swiper CSS imports
+import "swiper/css";
+// @ts-expect-error Missing type declarations for swiper CSS imports
+import "swiper/css/pagination";
 
 const Projects = () => {
   const [searchQuery, setSearchQuery] = useState("");
@@ -91,11 +97,20 @@ const categories = ["All", ...uniqueTags];
     const matchesSearch = project.title.toLowerCase().includes(searchQuery.toLowerCase()) || 
                          project.description.toLowerCase().includes(searchQuery.toLowerCase()) ||
                          project.tags.some(tag => tag.toLowerCase().includes(searchQuery.toLowerCase()));
+
+  
     
     const matchesFilter = activeFilter === "All" || project.tags.includes(activeFilter);
     
     return matchesSearch && matchesFilter;
   });
+
+  
+ const chunkArray = <T,>(arr: T[], size: number): T[][] => {
+    return Array.from({ length: Math.ceil(arr.length / size) }, (_, i) =>
+      arr.slice(i * size, i * size + size)
+    );
+  };
 
   return (
     <>
@@ -138,12 +153,39 @@ const categories = ["All", ...uniqueTags];
             </div>
           </div>
           
-          {filteredProjects.length > 0 ? (
+         {/* \{filteredProjects.length > 0 ? (
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {filteredProjects.map((project) => (
                 <ProjectCard key={project.id} project={project} />
               ))}
             </div>
+            */}
+
+             {filteredProjects.length > 0 ? (
+            <Swiper
+              modules={[Pagination]}
+              pagination={{ clickable: true ,
+                renderBullet: (index, className) => {
+      return `<span class="${className} custom-bullet"></span>`;}
+
+
+              }}
+              spaceBetween={24}
+              slidesPerView={1}
+              className="!pb-12"
+            >
+              {chunkArray(filteredProjects, 6).map((chunk, index) => (
+                <SwiperSlide key={index}>
+                  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                    {chunk.map((project) => (
+                      <ProjectCard key={project.id} project={project} />
+                    ))}
+                  </div>
+                </SwiperSlide>
+              ))}
+            </Swiper>
+
+
           ) : (
             <motion.div
               initial={{ opacity: 0, y: 20 }}
