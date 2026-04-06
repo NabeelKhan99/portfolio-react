@@ -8,10 +8,13 @@ import { ProjectCard, ProjectProps } from "@/components/ProjectCard";
 import SectionTitle from "@/components/SectionTitle";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper/modules";
+import { Navigation } from "swiper/modules";
 // @ts-expect-error Missing type declarations for swiper CSS imports
 import "swiper/css";
 // @ts-expect-error Missing type declarations for swiper CSS imports
 import "swiper/css/pagination";
+// @ts-expect-error Missing type declarations for swiper CSS imports
+import "swiper/css/navigation";
 import { allProjects } from "@/components/project";
 
 const Projects = () => {
@@ -109,13 +112,18 @@ const categories = ["All", ...uniqueTags];
 
              {filteredProjects.length > 0 ? (
             <Swiper
-              modules={[Pagination]}
+              modules={[Pagination, Navigation]}
               pagination={{ clickable: true ,
                 renderBullet: (index, className) => {
       return `<span class="${className} custom-bullet"></span>`;}
 
 
+
               }}
+              navigation={{
+        nextEl: ".custom-swiper-next",
+        prevEl: ".custom-swiper-prev",
+      }} 
               spaceBetween={24}
               slidesPerView={1}
               className="!pb-12"
@@ -126,6 +134,14 @@ const categories = ["All", ...uniqueTags];
                     {chunk.map((project) => (
                       <ProjectCard key={project.id} project={project} />
                     ))}
+
+                     {/* Custom arrows */}
+    <button className="custom-swiper-prev absolute top-1/2 left-2 -translate-y-1/2 z-10 glass-card p-2 rounded-full hover:bg-primary/20 transition-colors">
+      ❮
+    </button>
+    <button className="custom-swiper-next absolute top-1/2 right-2 -translate-y-1/2 z-10 glass-card p-2 rounded-full hover:bg-primary/20 transition-colors">
+      ❯
+    </button>
                   </div>
                 </SwiperSlide>
               ))}
@@ -148,69 +164,7 @@ const categories = ["All", ...uniqueTags];
         </div>
       </section>
       
-       {/* Open Source Section 
-      <section className="py-16 bg-secondary/20 backdrop-blur-sm">
-        <div className="container px-4 mx-auto">
-          <SectionTitle
-            subtitle="Open Source"
-            title="Contributing to the Community"
-            description="Some of my contributions to open source projects and the developer community."
-          />
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-            {[
-              {
-                title: "React Component Library",
-                description: "A collection of reusable React components with TypeScript support and accessibility features.",
-                contributions: "Created 15+ components and improved documentation.",
-                link: "https://github.com/NabeelKhan99",
-              },
-              {
-                title: "JavaScript Utility Functions",
-                description: "A library of utility functions for common JavaScript tasks.",
-                contributions: "Added new functions and wrote unit tests.",
-                link: "https://github.com/NabeelKhan99",
-              },
-              {
-                title: "Tailwind CSS Plugin",
-                description: "A plugin for Tailwind CSS that adds custom utilities and components.",
-                contributions: "Fixed bugs and added new features.",
-                link: "https://github.com/NabeelKhan99",
-              },
-              {
-                title: "Developer Blog",
-                description: "Technical articles and tutorials on web development topics.",
-                contributions: "Published 10+ articles on JavaScript, React, and CSS.",
-                link: "https://work-in-progress-nab.netlify.app/",
-              },
-            ].map((item, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5 }}
-                className="glass-card p-6 rounded-xl h-full"
-              >
-                <h3 className="text-xl font-bold mb-2">{item.title}</h3>
-                <p className="text-muted-foreground mb-3">{item.description}</p>
-                
-                <p className="text-sm mb-4">
-                  <span className="font-semibold text-primary">My contributions:</span> {item.contributions}
-                </p>
-                
-                <div className="mt-auto pt-2">
-                  <Button variant="outline" asChild size="sm" className="hover:border-primary/50">
-                    <a href={item.link} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1.5">
-                      View Project
-                    </a>
-                  </Button>
-                </div>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section> */}
+       
     </>
   );
 };

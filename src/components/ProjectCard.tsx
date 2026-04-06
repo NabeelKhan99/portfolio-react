@@ -62,7 +62,7 @@ export function ProjectCard({ project }: { project: ProjectProps }) {
             <Button size="sm" asChild>
               <a href={project.liveUrl} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1.5">
                 <ExternalLink size={16} />
-                <span>Demo</span>
+                <span>Live-Demo</span>
               </a>
             </Button>
           )}
