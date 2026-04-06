@@ -1,5 +1,5 @@
 
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState} from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { ArrowDown, Code, Github, Linkedin, Mail, ArrowRight } from "lucide-react";
@@ -8,6 +8,8 @@ import { ProjectCard, ProjectProps } from "@/components/ProjectCard";
 import { SkillCard, SkillProps } from "@/components/SkillCard";
 import SectionTitle from "@/components/SectionTitle";
 import TypingAnimation from "@/components/typinganimation";
+import { allProjects } from "@/components/project";
+import { getRandomProjects } from "@/lib/randomProjects";
 
 const Home = () => {
   const heroRef = useRef<HTMLDivElement>(null);
@@ -38,41 +40,24 @@ const Home = () => {
     };
   }, []);
 
-  const featuredProjects: ProjectProps[] = [
-    
-        {
-      id: "1",
-      title: "Automotive NLP Toolkit",
-      description: "Developed an Automotive NLP Python CLI toolkit for analyzing customer automotive feedback using NLP. It clusters complaints by issues or car make/model, detects recurring faults, performs sentiment analysis, and suggests dynamic pricing. Cloud deployment support is coming soon for scalable use.",
-      image: "/res1/mycli.png",
-      tags: ["Python", "Typer", "SQLAlchemy", "SQLite", "Pandas", "Scikit-learn", "SciPy", "spaCy"],
-      liveUrl: "https://work-in-progress-nab.netlify.app/",
-      githubUrl: "https://github.com/NabeelKhan99/Automotive-NLP",
-    }, 
+const [featuredProjects, setFeaturedProjects] = useState<ProjectProps[]>([]);
+const [currentIndex, setCurrentIndex] = useState(0);
 
-     {
-      id: "2",
-      title: "Smart FAQ Chatbot",
-      description: "Developed Smart FAQ which is an AI-powered chatbot with a React, Vite, and TypeScript frontend and a FastAPI backend powered by Hugging Face’s google/flan-t5-small. It provides context-aware answers through a floating widget and clean conversation UI. Currently, it responds with helpful answers and fallback jokes when uncertain. An upcoming feature will extract knowledge from site pages, ensuring responses are always grounded in real content.",
-      image: "/res1/img3chatbot.png",
-      tags: ["FastAPI", "React", "Prisma", "PostgreSQL"],
-      liveUrl: "https://nabeel-saeed.netlify.app/",
-      githubUrl: "https://github.com/NabeelKhan99/ChatBot-Backend",
-    },
+useEffect(() => {
+  setFeaturedProjects(getRandomProjects(allProjects, 3)); // pick 3 random projects
+}, []);
 
-      {
-      id: "3",
-      title: "Emushtashfaa: Modular Healthcare Management System",
-      description: "Developed Emushtashfaa which is a modular healthcare management system built with Java Spring Boot, featuring separate Patient, Billing, and Kafka-based notification services. Docker and AWS CLI were used for efficient containerization and deployment. Real-time patient event processing was enabled via Apache Kafka. The system achieved over 85% test coverage, improving reliability and reducing production issues by 25%.",
-      image: "/res1/stat1.PNG",
-      tags: ["Java", "SpringBoot", "Docker", "AWS CLI"],
-      liveUrl: "https://work-in-progress-nab.netlify.app/",
-      githubUrl: "https://github.com/NabeelKhan99/emustashfaa-javaspringboot",
-    },
-    
-    
-     
-  ];
+useEffect(() => {
+  const interval = setInterval(() => {
+    setCurrentIndex((prev) => (prev + 1) % featuredProjects.length);
+  }, 3000); // change slide every 3 seconds
+
+  return () => clearInterval(interval);
+}, [featuredProjects]);
+
+if (featuredProjects.length === 0) return null;
+
+const currentProject = featuredProjects[currentIndex];
 
   const skills: SkillProps[] = [
     {
