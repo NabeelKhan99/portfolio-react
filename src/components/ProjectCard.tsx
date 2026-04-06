@@ -23,7 +23,7 @@ export function ProjectCard({ project }: { project: ProjectProps }) {
       transition={{ duration: 0.5, delay: 0.1 }}
       className="group glass-card overflow-hidden rounded-xl flex flex-col h-full transform transition-all duration-300 hover:translate-y-[-5px] hover:shadow-xl"
     >
-      <div className="overflow-hidden h-48 relative">
+    <div className="relative w-full aspect-[16/9] overflow-hidden">
         <img 
           src={project.image} 
           alt={project.title} 
