@@ -221,11 +221,15 @@ const currentProject = featuredProjects[currentIndex];
            }
            />
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {/*<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {featuredProjects.map((project) => (
               <ProjectCard key={project.id} project={project} />
             ))}
-          </div>
+          </div>*/}
+
+          <div className="relative max-w-4xl mx-auto transition-all duration-500">
+      <ProjectCard key={currentProject.id} project={currentProject} />
+    </div>
           
           <div className="mt-12 text-center">
             <Button asChild variant="outline">
