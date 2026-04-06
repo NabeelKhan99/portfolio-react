@@ -44,7 +44,7 @@ const [featuredProjects, setFeaturedProjects] = useState<ProjectProps[]>([]);
 const [currentIndex, setCurrentIndex] = useState(0);
 
 useEffect(() => {
-  setFeaturedProjects(getRandomProjects(allProjects, 3)); // pick 3 random projects
+  setFeaturedProjects(getRandomProjects(allProjects, 6)); // pick 6 random projects
 }, []);
 
 useEffect(() => {
