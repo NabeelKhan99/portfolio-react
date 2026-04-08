@@ -1,9 +1,17 @@
 import { ProjectProps } from "@/components/ProjectCard";
 export const allProjects: ProjectProps[] = [
 
-    {
+  {
+  "title": "Manitoba Health Geographic ETL Pipeline",
+  "description": "This project builds a production-style ETL pipeline using Python, PostgreSQL, SQLAlchemy, and Pandas to process Manitoba health region data. It extracts data through ArcGIS REST API calls to the Manitoba Health FeatureServer, handling JSON parsing and pagination. The pipeline cleans and standardizes the data, while also creating useful metrics like water area. With secure credential management and GitHub Actions automating weekly runs, it delivers a reliable, scalable, and maintainable solution for integrating and storing structured geographic data in PostgreSQL.",
+  "image": "/res1/etl-pipe.png",
+  "tags": ["Python", "PostgreSQL", "SQLAlchemy", "Pandas", "ETL Pipeline", "ArcGIS API", "CI/CD"],
+  "githubUrl": "https://github.com/NabeelKhan99/ETLpipe"
+},  
+  
+  {
     title: "Manitoba Broadband Competitive Gap Analysis",
-  description: "A geospatial reconstruction and analysis project identifying 50/10 Mbps internet coverage gaps across Manitoba. By bypassing a critical ID mismatch between legacy 1km hexagon maps and modern broadband speed datasets, I sourced and integrated National Broadband Data (NBD) GeoPackages via spatial centroid joins. The final analysis provides granular community-level metrics—identifying specific underserved areas like Ethelbert (17.4% coverage) and Grandview (33.3%)—to support strategic infrastructure expansion for local telecommunications cooperatives.",
+  description: "A geospatial reconstruction and analysis effort that finds gaps in 50/10 Mbps internet availability throughout Manitoba. I found and integrated National Broadband Data (NBD) GeoPackages using spatial centroid joins to get around a crucial ID mismatch between legacy 1km hexagon maps and contemporary broadband speed information. In order to support local telecommunications cooperatives' strategic infrastructure expansion, the final research offers detailed community-level data that highlight specific underserved locations like Ethelbert (17.4% coverage) and Grandview (33.3%).",
   image: "/res1/broadband.png", 
   tags: ["QGIS", "GIS", "Spatial Data Engineering", "Data Reconstruction", "GeoPackage", "Manitoba Census Data"],
     githubUrl: "https://github.com/NabeelKhan99/QGIS-W"},
