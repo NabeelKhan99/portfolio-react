@@ -1,6 +1,16 @@
 import { ProjectProps } from "@/components/ProjectCard";
 export const allProjects: ProjectProps[] = [
 
+
+  {
+  title: "Real-Time Smart City Data Pipeline",
+  description: "Built an end-to-end real-time data pipeline to simulate smart city operations, streaming traffic data through Apache Kafka and processing it via Python-based ETL workflows using object-oriented design. Transformed and stored data in MongoDB, with a REST API layer for real-time access and analytics.",
+  image: "/res1/smartcity.png",
+  tags: ["Python", "Apache Kafka", "MongoDB", "Docker", "Kubernetes", "FastAPI"],
+  liveUrl: "",
+  githubUrl: "https://github.com/NabeelKhan99/smart-city-pipeline",
+}
+
   {
   "title": "Manitoba Health Geographic ETL Pipeline",
   "description": "This project builds a production-style ETL pipeline using Python, PostgreSQL, SQLAlchemy, and Pandas to process Manitoba health region data. It extracts data through ArcGIS REST API calls to the Manitoba Health FeatureServer, handling JSON parsing and pagination. The pipeline cleans and standardizes the data, while also creating useful metrics like water area. With secure credential management and GitHub Actions automating weekly runs, it delivers a reliable, scalable, and maintainable solution for integrating and storing structured geographic data in PostgreSQL.",
