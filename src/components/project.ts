@@ -8,7 +8,7 @@ export const allProjects: ProjectProps[] = [
   image: "/res1/smartcity.png",
   tags: ["Python", "Apache Kafka", "MongoDB", "Docker", "Kubernetes", "FastAPI"],
   githubUrl: "https://github.com/NabeelKhan99/smart-city-pipeline",
-}
+},
 
   {
   "title": "Manitoba Health Geographic ETL Pipeline",
