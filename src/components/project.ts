@@ -7,7 +7,6 @@ export const allProjects: ProjectProps[] = [
   description: "Built an end-to-end real-time data pipeline to simulate smart city operations, streaming traffic data through Apache Kafka and processing it via Python-based ETL workflows using object-oriented design. Transformed and stored data in MongoDB, with a REST API layer for real-time access and analytics.",
   image: "/res1/smartcity.png",
   tags: ["Python", "Apache Kafka", "MongoDB", "Docker", "Kubernetes", "FastAPI"],
-  liveUrl: "",
   githubUrl: "https://github.com/NabeelKhan99/smart-city-pipeline",
 }
 
