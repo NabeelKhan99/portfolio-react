@@ -162,7 +162,7 @@ const currentProject = featuredProjects[currentIndex];
               
             <div className="flex flex-wrap gap-4">
               <Button asChild size="lg">
-              <a href="https://github.com/NabeelKhan99" target="_blank" rel="noopener noreferrer">
+              <a href="https://devlogger.netlify.app/" target="_blank" rel="noopener noreferrer">
                 My Dev-Log
               </a>
             </Button>
