@@ -44,7 +44,7 @@ const [featuredProjects, setFeaturedProjects] = useState<ProjectProps[]>([]);
 const [currentIndex, setCurrentIndex] = useState(0);
 
 useEffect(() => {
-  setFeaturedProjects(getRandomProjects(allProjects, 6)); // pick 6 random projects
+  setFeaturedProjects(getRandomProjects(allProjects, 8)); // pick 8 random projects
 }, []);
 
 useEffect(() => {
@@ -58,7 +58,7 @@ useEffect(() => {
 if (featuredProjects.length === 0) return null;
 
 const currentProject = featuredProjects[currentIndex];
-
+/** 
   const skills: SkillProps[] = [
     {
       title: "Front-end Development",
@@ -84,14 +84,43 @@ const currentProject = featuredProjects[currentIndex];
       icon: <Code className="h-6 w-6 text-blue-500" />,
       color: "bg-blue-500/10",
     },
-  ];
+  ];*/
+
+  const skills: SkillProps[] = [
+
+    {
+  title: "Data Pipeline Development",
+  description: "Designing and building scalable ETL/ELT pipelines for data ingestion, transformation, and processing.",
+  icon: <Code className="h-6 w-6 text-primary" />,
+  color: "bg-primary/10",
+},
+{
+  title: "Backend & Data Systems",
+  description: "Developing robust backend services, APIs, and data processing systems for high-volume data workflows.",
+  icon: <Code className="h-6 w-6 text-accent" />,
+  color: "bg-accent/10",
+},
+{
+  title: "Data Modeling & Warehousing",
+  description: "Designing optimized data models, schemas, and warehouses to support analytics and reporting.",
+  icon: <Code className="h-6 w-6 text-amber-500" />,
+  color: "bg-amber-500/10",
+},
+{
+  title: "Cloud & Data Infrastructure",
+  description: "Building and managing cloud-based data platforms with CI/CD, orchestration, and scalable storage solutions.",
+  icon: <Code className="h-6 w-6 text-blue-500" />,
+  color: "bg-blue-500/10",
+},
+
+    ];
 
   const roles = [
-    "Web Developer",
-    "Software Developer", 
-    "Database Architect",
-    "UI/UX Designer", 
-    "Full-Stack Engineer"
+    "Data Engineer",
+    "ETL Engineer",
+    "Data Pipeline Developer",
+    "Big Data Engineer",
+    "Geospatial Data Engineer"
   ];
 
 
