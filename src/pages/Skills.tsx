@@ -7,7 +7,8 @@ import {
   GitBranch, 
   Terminal, 
   Workflow, 
-  Code
+  Code,
+  Warehouse
 } from "lucide-react";
 import { SkillCard, SkillProps } from "@/components/SkillCard";
 import SectionTitle from "@/components/SectionTitle";
@@ -80,7 +81,7 @@ const skillCategories: SkillProps[] = [
 {
   title: "Data Modeling & Warehousing",
   description: "Designing optimized data models, schemas, and warehouses to support analytics and reporting.",
-  icon: <Code className="h-6 w-6 text-amber-500" />,
+  icon: <Warehouse className="h-6 w-6 text-amber-500" />,
   color: "bg-amber-500/10",
 },
 {

@@ -2,7 +2,7 @@
 import { useEffect, useRef, useState} from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { ArrowDown, Code, Github, Linkedin, Mail, ArrowRight } from "lucide-react";
+import { ArrowDown, Code, Github, Linkedin, Mail, ArrowRight, Warehouse } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { ProjectCard, ProjectProps } from "@/components/ProjectCard";
 import { SkillCard, SkillProps } from "@/components/SkillCard";
@@ -103,7 +103,7 @@ const currentProject = featuredProjects[currentIndex];
 {
   title: "Data Modeling & Warehousing",
   description: "Designing optimized data models, schemas, and warehouses to support analytics and reporting.",
-  icon: <Code className="h-6 w-6 text-amber-500" />,
+  icon: <Warehouse className="h-6 w-6 text-amber-500" />,
   color: "bg-amber-500/10",
 },
 {
@@ -138,16 +138,24 @@ const currentProject = featuredProjects[currentIndex];
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
             >
-              <span className="inline-block px-3 py-1 text-xs font-medium rounded-full mb-6 bg-primary/10 text-primary">
-                Software Engineer
+          <div className="flex gap-2 mb-6">
+            <span className="inline-block px-3 py-1 text-xs font-medium rounded-full bg-primary/10 text-primary">
+               Data Engineer
+            </span>
+  
+            <span className="inline-block px-3 py-1 text-xs font-medium rounded-full bg-primary/10 text-primary">
+               Software Engineer
               </span>
+
+  
+          </div>
               
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-balance">
-                Crafting Digital <span className="text-gradient">Experiences</span> & Solutions
+                 Designing Reliable <span className="text-gradient">Data Engineering Systems</span> at Scale
               </h1>
               
               <p className="text-lg text-muted-foreground mb-4 text-balance">
-                I'm a <TypingAnimation words={roles} /> specializing in building exceptional digital experiences. Currently, I'm focused on creating accessible, human-centered products.
+                I'm a <TypingAnimation words={roles} /> Focused on building scalable data engineering systems, ETL pipelines, and analytics workflows. Currently working on transforming complex datasets into reliable, production-ready data solutions.
               </p>
               
               
