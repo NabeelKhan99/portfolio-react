@@ -161,8 +161,10 @@ const currentProject = featuredProjects[currentIndex];
               
             <div className="flex flex-wrap gap-4">
               <Button asChild size="lg">
-                <Link to="/contact">Get In Touch</Link>
-              </Button>
+              <a href="https://github.com/NabeelKhan99" target="_blank" rel="noopener noreferrer">
+                My new Dev-Log
+              </a>
+            </Button>
 
               <Button variant="outline" size="lg" asChild>
                 <Link to="/projects">View Projects</Link>
