@@ -1,14 +1,14 @@
 import { ProjectProps } from "@/components/ProjectCard";
 export const allProjects: ProjectProps[] = [
 
-
-  {
-  title: "Real-Time Smart City Data Pipeline",
-  description: "Built an end-to-end real-time data pipeline to simulate smart city operations, streaming traffic data through Apache Kafka and processing it via Python-based ETL workflows using object-oriented design. Transformed and stored data in MongoDB, with a REST API layer for real-time access and analytics.",
-  image: "/res1/smartcity.png",
-  tags: ["Python", "Apache Kafka", "MongoDB", "Docker", "Kubernetes", "FastAPI"],
-  githubUrl: "https://github.com/NabeelKhan99/smart-city-pipeline",
+{
+  "title": "Manitoba Petroleum Integrated Warehouse",
+  "description": "An automated data engineering platform designed to consolidate fragmented provincial petroleum reports into a queryable relational warehouse. Developed using Python, PostgreSQL, and Docker, the system ingests weekly well approvals and historical spill statistics while enforcing D-12 UWI regulatory standards. By leveraging Apache Airflow for workflow orchestration and implementing geospatial integrity checks, this project provides a scalable solution for correlating drilling activity with environmental risk metrics in a production-oriented environment.",
+  "image": "/res1/mbwp.png",
+  "tags": ["Python", "PostgreSQL", "Apache Airflow", "Docker", "ETL Pipeline", "Regulatory Compliance", "GIS"],
+  "githubUrl": "https://github.com/NabeelKhan99/mb-petro-warehouse"
 },
+ 
 
   {
   "title": "Manitoba Health Geographic ETL Pipeline",
@@ -84,4 +84,12 @@ export const allProjects: ProjectProps[] = [
       liveUrl: "https://weatherdasher.netlify.app/",
       githubUrl: "https://github.com/NabeelKhan99/weather-dashboard-API/tree/master",
     },
+
+     {
+  title: "Real-Time Smart City Data Pipeline",
+  description: "Built an end-to-end real-time data pipeline to simulate smart city operations, streaming traffic data through Apache Kafka and processing it via Python-based ETL workflows using object-oriented design. Transformed and stored data in MongoDB, with a REST API layer for real-time access and analytics.",
+  image: "/res1/smartcity.png",
+  tags: ["Python", "Apache Kafka", "MongoDB", "Docker", "Kubernetes", "FastAPI"],
+  githubUrl: "https://github.com/NabeelKhan99/smart-city-pipeline",
+},
     ];
