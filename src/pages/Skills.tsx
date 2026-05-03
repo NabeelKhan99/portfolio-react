@@ -6,7 +6,8 @@ import {
   Database, 
   GitBranch, 
   Terminal, 
-  Workflow 
+  Workflow, 
+  Code
 } from "lucide-react";
 import { SkillCard, SkillProps } from "@/components/SkillCard";
 import SectionTitle from "@/components/SectionTitle";
@@ -63,6 +64,31 @@ const expertiseData = [
 
 
 const skillCategories: SkillProps[] = [
+
+   {
+  title: "Data Pipeline Development",
+  description: "Designing and building scalable ETL/ELT pipelines for data ingestion, transformation, and processing.",
+  icon: <Code className="h-6 w-6 text-primary" />,
+  color: "bg-primary/10",
+},
+{
+  title: "Backend & Data Systems",
+  description: "Developing robust backend services, APIs, and data processing systems for high-volume data workflows.",
+  icon: <Code className="h-6 w-6 text-accent" />,
+  color: "bg-accent/10",
+},
+{
+  title: "Data Modeling & Warehousing",
+  description: "Designing optimized data models, schemas, and warehouses to support analytics and reporting.",
+  icon: <Code className="h-6 w-6 text-amber-500" />,
+  color: "bg-amber-500/10",
+},
+{
+  title: "Cloud & Data Infrastructure",
+  description: "Building and managing cloud-based data platforms with CI/CD, orchestration, and scalable storage solutions.",
+  icon: <Code className="h-6 w-6 text-blue-500" />,
+  color: "bg-blue-500/10",
+},
   {
     title: "Frontend Development",
     description: "Creating responsive, accessible, and performant user interfaces with React, TypeScript, and modern CSS.",
