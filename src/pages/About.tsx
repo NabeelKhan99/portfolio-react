@@ -120,13 +120,14 @@ const About = () => {
         <h2 className="text-4xl font-bold mb-4">Hello there!!!</h2>
         <p className="text-lg leading-7">
         "Hey, I’m Nabeel. 
-        I am an alumnus of University of Manitoba and I love building stuff that actually gets used by users and makes a real impact. 
-        I don't care if the project is for a big company or a small non-profit, as long as it is solving a problem I am there to solve it.
-        I’ve done things like a healthcare dashboard that lets clinics send updates faster, 
-        a chatbot that actually answers questions without confusing people 
-        and a platform that connects contractors to clients with maps and logins that just work. 
-        I like messing around with Java, Python, React  and more!!! basically whatever makes the project work. 
-        I’m always trying stuff out, breaking it, fixing it, and learning along the way." 
+I am an alumnus of University of Manitoba and I love building stuff that actually gets used by users and makes a real impact. 
+I don't care if the project is for a big company or a small non-profit, as long as it is solving a problem I am there to solve it. 
+I’ve built data pipelines that clean, transform, and standardize messy real-world datasets into structured systems that are actually usable for analysis and decision-making. 
+I worked on a petroleum data warehouse where I automated ingestion and transformation workflows using Python and PostgreSQL to make fragmented datasets query-ready. 
+I also built a geospatial ETL pipeline using ArcGIS APIs and SQLAlchemy to process large-scale health region data and handle complex JSON structures and schema normalization. 
+Another project involved analyzing broadband coverage gaps in Manitoba using spatial data processing in QGIS, helping turn raw geographic data into actionable insights. 
+I like working with Python, SQL, PostgreSQL, Airflow, and GIS tools—basically anything that helps turn raw data into something meaningful. 
+I’m always experimenting with data systems, breaking pipelines, fixing them, and improving how data flows from source to insight." 
         </p>
       </div>
     </section>
