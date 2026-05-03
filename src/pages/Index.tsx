@@ -11,6 +11,7 @@ import TypingAnimation from "@/components/typinganimation";
 import { allProjects } from "@/components/project";
 import { getRandomProjects } from "@/lib/randomProjects";
 
+
 const Home = () => {
   const heroRef = useRef<HTMLDivElement>(null);
   
@@ -222,7 +223,7 @@ const currentProject = featuredProjects[currentIndex];
                 <div className="absolute inset-0 bg-gradient-to-tr from-primary/40 to-accent/40 rounded-full blur-[100px] opacity-30"></div>
                 <div className="glass-card relative h-full rounded-3xl p-6 border overflow-hidden">
                   <div className="absolute top-0 left-0 w-full h-1/2 bg-gradient-to-br from-primary/20 to-accent/20 blur-3xl -z-10"></div>
-                  <div className="h-full w-full bg-[url('https://images.unsplash.com/photo-1508830524289-0adcbe822b40?q=80&w=1025&auto=format&fit=crop')] bg-cover bg-center rounded-2xl"></div>
+                  <div className="h-full w-full bg-[url('/res1/welcomeimage.png')] bg-cover bg-center rounded-2xl"></div>
                 </div>
               </div>
             </motion.div>

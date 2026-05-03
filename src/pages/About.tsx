@@ -30,7 +30,7 @@ const About = () => {
 
        
         <div className="absolute inset-0 overflow-hidden rounded-2xl pointer-events-none">
-           {/* 🔥 Flame Effect 
+           {/*  Flame Effect 
           {Array.from({ length: 10 }).map((_, i) => (
             <motion.div
               key={`flame-${i}`}
