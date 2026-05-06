@@ -3,7 +3,7 @@ export const allProjects: ProjectProps[] = [
 
 {
   "title": "Manitoba Petroleum Integrated Warehouse",
-  "description": "An automated data engineering platform designed to consolidate fragmented provincial petroleum reports into a queryable relational warehouse. Developed using Python, PostgreSQL, and Docker, the system ingests weekly well approvals and historical spill statistics while enforcing D-12 UWI regulatory standards. By leveraging Apache Airflow for workflow orchestration and implementing geospatial integrity checks, this project provides a scalable solution for correlating drilling activity with environmental risk metrics in a production-oriented environment.",
+  "description": "An automated data engineering platform designed to consolidate fragmented provincial petroleum reports into a queryable relational warehouse. Developed using Python, PostgreSQL, and Docker, the system ingests weekly well approvals and historical spill statistics while enforcing Manitoba UWI regulatory standards. By leveraging Apache Airflow for workflow orchestration and implementing regulatory integrity checks, this project provides a scalable solution for correlating drilling activity with environmental risk metrics in a production-oriented environment.",
   "image": "/res1/mbwp.png",
   "tags": ["Python", "PostgreSQL", "Apache Airflow", "Docker", "ETL Pipeline", "Regulatory Compliance", "GIS"],
   "githubUrl": "https://github.com/NabeelKhan99/mb-petro-warehouse"
