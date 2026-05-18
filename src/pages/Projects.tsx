@@ -34,6 +34,7 @@ const Projects = () => {
 
  {/*  const categories = ["All", "React", "TypeScript", "Node.js", "JavaScript", "APIs", "PHP","Java","SpringBoot"];*/}
  // Flatten all project tags into one array
+
 const allTags = allProjects.flatMap(project => project.tags);
 
 // Remove duplicates and sort
@@ -71,8 +72,8 @@ const categories = ["All", ...uniqueTags];
             description="Browse through my latest projects, ranging from automated ETL pipelines to complex spatial data warehouses. Each project is architected with care, focusing on scalability, performance, and attention to detail. I embrace complex technical challenges that push me to grow and evolve as a Data Engineer."
           />
           
-          <div className="flex flex-col sm:flex-row justify-between gap-6 mb-12">
-            <div className="relative flex-1 max-w-xs">
+          <div className="flex flex-col gap-6 mb-12">
+            <div className="relative w-64">
               <Search className="absolute left-3 top-2.5 h-4 w-4 text-muted-foreground" />
               <Input
                 placeholder="Search projects..."
