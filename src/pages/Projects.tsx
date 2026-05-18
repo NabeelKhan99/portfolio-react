@@ -22,12 +22,12 @@ const Projects = () => {
   const [activeFilter, setActiveFilter] = useState("All");
   
   
-  {allProjects.map((project, index) => (
+  {/*allProjects.map((project, index) => (
   <ProjectCard
     key={index}
     project={{ ...project, id: `project-${index + 1}` }} // ID generated dynamically
   />
-))}  
+));*/}  
    
    
  {/*const projects = allProjects;*/}
@@ -130,11 +130,15 @@ const categories = ["All", ...uniqueTags];
             >
               {chunkArray(filteredProjects, 6).map((chunk, index) => (
                 <SwiperSlide key={index}>
+ <div className="relative">
+  <button className="custom-swiper-prev absolute top-1/2 left-2 -translate-y-1/2 z-10 glass-card p-2 rounded-full hover:bg-primary/20 transition-colors">❮</button>
   <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
     {chunk.map((project) => (
       <ProjectCard key={project.id} project={project} />
     ))}
   </div>
+  <button className="custom-swiper-next absolute top-1/2 right-2 -translate-y-1/2 z-10 glass-card p-2 rounded-full hover:bg-primary/20 transition-colors">❯</button>
+</div>
 
   {/* Prev / Next at the bottom */}
   <div className="flex justify-center items-center gap-4 mt-6">
