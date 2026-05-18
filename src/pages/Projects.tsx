@@ -67,7 +67,8 @@ const categories = ["All", ...uniqueTags];
         <div className="container px-4 mx-auto">
           <SectionTitle
             subtitle="My Work"
-            title="Browse through my latest projects, ranging from automated ETL pipelines to complex spatial data warehouses. Each project is architected with care, focusing on scalability, performance, and attention to detail. I embrace complex technical challenges that push me to grow and evolve as a Data Engineer."
+             title="My Projects, Showcasing My Skills."
+            description="Browse through my latest projects, ranging from automated ETL pipelines to complex spatial data warehouses. Each project is architected with care, focusing on scalability, performance, and attention to detail. I embrace complex technical challenges that push me to grow and evolve as a Data Engineer."
           />
           
           <div className="flex flex-col sm:flex-row justify-between gap-6 mb-12">
@@ -128,17 +129,12 @@ const categories = ["All", ...uniqueTags];
             >
               {chunkArray(filteredProjects, 6).map((chunk, index) => (
                 <SwiperSlide key={index}>
- <div className="relative">
-  <button className="custom-swiper-prev absolute top-1/2 left-2 -translate-y-1/2 z-10 glass-card p-2 rounded-full hover:bg-primary/20 transition-colors">❮</button>
   <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
     {chunk.map((project) => (
       <ProjectCard key={project.id} project={project} />
     ))}
   </div>
-  <button className="custom-swiper-next absolute top-1/2 right-2 -translate-y-1/2 z-10 glass-card p-2 rounded-full hover:bg-primary/20 transition-colors">❯</button>
-</div>
 
-  {/* Prev / Next at the bottom */}
   <div className="flex justify-center items-center gap-4 mt-6">
     <button className="custom-swiper-prev glass-card px-5 py-2 rounded-full hover:bg-primary/20 transition-colors">
       ❮ Prev
