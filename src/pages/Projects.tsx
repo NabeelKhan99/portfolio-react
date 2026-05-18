@@ -67,13 +67,11 @@ const categories = ["All", ...uniqueTags];
         <div className="container px-4 mx-auto">
           <SectionTitle
             subtitle="My Work"
-            title="My Projects, Showcasing My Skills."
-            description="Browse through my latest projects that are ongoing or completed. Each project is handled with care and attention to detail.
-            I learn new things with every project and love to take on challenges that push me to grow as a Software Engineer."
+            title="Browse through my latest projects, ranging from automated ETL pipelines to complex spatial data warehouses. Each project is architected with care, focusing on scalability, performance, and attention to detail. I embrace complex technical challenges that push me to grow and evolve as a Data Engineer."
           />
           
           <div className="flex flex-col sm:flex-row justify-between gap-6 mb-12">
-            <div className="relative">
+            <div className="relative w-full sm:w-72">
               <Search className="absolute left-3 top-2.5 h-4 w-4 text-muted-foreground" />
               <Input
                 placeholder="Search projects..."
