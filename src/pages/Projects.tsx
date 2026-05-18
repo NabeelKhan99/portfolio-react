@@ -130,20 +130,22 @@ const categories = ["All", ...uniqueTags];
             >
               {chunkArray(filteredProjects, 6).map((chunk, index) => (
                 <SwiperSlide key={index}>
-                  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                    {chunk.map((project) => (
-                      <ProjectCard key={project.id} project={project} />
-                    ))}
+  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+    {chunk.map((project) => (
+      <ProjectCard key={project.id} project={project} />
+    ))}
+  </div>
 
-                     {/* Custom arrows */}
-    <button className="custom-swiper-prev absolute top-1/2 left-2 -translate-y-1/2 z-10 glass-card p-2 rounded-full hover:bg-primary/20 transition-colors">
-      ❮
+  {/* Prev / Next at the bottom */}
+  <div className="flex justify-center items-center gap-4 mt-6">
+    <button className="custom-swiper-prev glass-card px-5 py-2 rounded-full hover:bg-primary/20 transition-colors">
+      ❮ Prev
     </button>
-    <button className="custom-swiper-next absolute top-1/2 right-2 -translate-y-1/2 z-10 glass-card p-2 rounded-full hover:bg-primary/20 transition-colors">
-      ❯
+    <button className="custom-swiper-next glass-card px-5 py-2 rounded-full hover:bg-primary/20 transition-colors">
+      Next ❯
     </button>
-                  </div>
-                </SwiperSlide>
+  </div>
+</SwiperSlide>
               ))}
             </Swiper>
 
