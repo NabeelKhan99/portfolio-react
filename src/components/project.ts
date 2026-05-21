@@ -3,7 +3,7 @@ export const allProjects: ProjectProps[] = [
 
   {
   "title": "Manitoba Health PCH Capacity & Access Analytics Platform",
-  "description": "A production-grade data analytics platform that extracts, structures, and analyzes Manitoba Health's Personal Care Home (PCH) admission data for seniors 75+. Using Python, PostgreSQL, and SAS, the platform ingests real government data from PDF charts and tables, transforms it into a normalized star schema, and delivers interactive dashboards, wait time disparity analysis, and acuity-based demand forecasting. The system includes automated ETL, privacy-preserving small cell suppression, regional benchmarking, and a reproducible SAS validation script — demonstrating the full data analyst workflow from extraction to insight for Manitoba's Health, Seniors and Long Term Care portfolio.",
+  "description": "Built a complete data pipeline for Manitoba PCH admissions, extracting structured and unstructured data from government PDFs and simulating 25,000 patient-level records matching PDR schema. Implemented bronze/silver/gold medallion architecture with data quality handling for missing values, typos, and out-of-range wait times. Delivered SQL analysis showing Southern region waits 565% above provincial benchmark while Winnipeg waits 77% below.",
   "image": "/res1/mbhpch.png",
   "tags": ["Python", "PostgreSQL", "SAS", "Power BI", "ETL", "Health Analytics", "Seniors Care", "Wait Time Analysis", "Privacy Preservation", "Regional Benchmarking", "Streamlit", "Docker"],
   "githubUrl":"https://github.com/NabeelKhan99/manitoba-health-pch-analytics"
